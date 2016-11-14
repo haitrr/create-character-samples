@@ -18,5 +18,6 @@ for i in char:
         if ("Sample" + str(char.index(i) + 1).zfill(3)) not in listdir("Samples/"):
             mkdir("Samples/" + "Sample" + str(char.index(i) + 1).zfill(3))
         img_resized.save(
-            "Samples/Sample" + str(char.index(i) + 1).zfill(3) + "/img" + str(fonts.index(j) + 1).zfill(5) + ".png",
+            "Samples/Sample" + str(char.index(i) + 1).zfill(3) + "/img" + str(char.index(i) + 1).zfill(3) + "-" + str(
+                fonts.index(j) + 1).zfill(5) + ".png",
             "PNG")
